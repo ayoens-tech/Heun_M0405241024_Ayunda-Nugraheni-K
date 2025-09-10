@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me si Anak Angkatan pertama dari AI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #f4f4f9;
+      text-align: center;
+    }
+    header {
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #00c3ff;
+    }
+    header p {
+      font-size: 1.3em;
+      color: #ffde59;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      border: 4px solid #00c3ff;
+      box-shadow: 0 0 20px rgba(0, 195, 255, 0.7);
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s;
+    }
+    section:hover {
+      transform: scale(1.04);
+    }
+    h2 {
+      color: #ffde59;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 8px 0;
+      font-size: 1.1em;
+      text-align: left;
+    }
+    .skills, .hobbies {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .skills ul li, .hobbies ul li {
+      margin-left: 20px;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 0.9em;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00c3ff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #009ad6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <p>Si Anak Pertama dari jurusan Artificial Intelligence</p>
+  </header>
+
+  <img src="Fotoku.jpg" alt="Foto Profil" class="profile-img">
+
+  <section>
+    <h2>Biodata</h2>
+    <ul>
+      <li><strong>Halo semuanya kenalin nih aku</strong> Ayunda Nugraheni Khoerunnisa dengan NI M0405241024 dari Program Studi Artificial Intelligence, Universitas IPB University, Angkatan 61 "anak pertama dari jurusan AI loh"</li>
+      <li><strong>Kalian tau gak sih</strong> Aku itu introvert banget tapi setelah masuk IPB aku bisa dengan mudah beradaptasi karena memiliki banyak sekali teman teman yang luar biasa, tidak hanya teman lingkungannya pun memberikan aku ruang untuk terus berkembang sehingga aku tidak perlu takut untuk mengekspresikan diriku</li>
+    </ul>
+
+    <div class="skills">
+      <h2>Kemampuanku</h2>
+      <ul>
+        <li>Mudah beradaptasi</li>
+        <li>Dapat bekerja secara individualis maupun kerja sama tim</li>
+        <li>Berpikir Kritis</li>
+        <li>Si Introvert yang bisa berubah jadi Ekstrovert</li>
+      </ul>
+    </div>
+
+    <div class="hobbies">
+      <h2>Hobiku</h2>
+      <ul>
+        <li>Bermain game</li>
+        <li>Olahraga Badminton</li>
+        <li>Nonton film</li>
+        <li>Dengerin musik</li>
+          <img src="VALORANT.webp" alt="Game Kesukaanku" class="profile-img">
+      </ul>
+    </div>
+
+    <button onclick="ucapan()">Klik untuk Sapaan</button>
+  </section>
+
+  <footer>
+    &copy; 2025 - Kenalan Yuk | Salam Hangat dan Penuh Kasih
+  </footer>
+
+  <script>
+    function ucapan() {
+      const jam = new Date().getHours();
+      let salam;
+      if (jam < 12) salam = "Selamat pagi!";
+      else if (jam < 18) salam = "Selamat siang!";
+      else salam = "Selamat malam!";
+      alert(salam + " Senangnya bisa kenalan sama kalian ehe!");
+    }
+  </script>
+</body>
+</html>
